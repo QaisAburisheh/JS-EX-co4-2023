@@ -51,3 +51,90 @@ function reverseNumber(num) {
   }
   console.log(reverseNumber(92485));
 //   7
+
+// 1-JavaScript Functions
+// 1.Create a function that will display the smallest value in the array.
+
+function findSmallest(arr) {
+  let smallest = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < smallest) {
+      smallest = arr[i];
+    }
+  }
+  return smallest;
+}
+
+console.log(findSmallest([30, 45, 60, 7]));
+
+// 2
+
+function alphaOrder(str){
+  let arr = str.split("");
+  arr.sort();
+  let sortedStr = arr.join("");
+  return sortedStr
+}
+console.log(alphaOrder("hello"))
+
+// 3
+
+function factorial(n) {
+  if (n === 0 || n === 1) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+}
+console.log(factorial(8));
+
+// 4 
+function oddEven(number4){
+  if(number4 %2===0){
+    return "Even";
+  }
+  else{
+    return "Odd"
+  }
+}
+console.log(oddEven(9));
+// 5
+
+function evenNum(array5) {
+  let even= [];
+  for (let i = 0; i < array5.length; i++) {
+    if (array5[i] % 2 === 0) {
+      even.push(array5[i]);
+    }
+  }
+  return even;
+}
+console.log(evenNum([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+
+// 6
+
+
+function numbersOnly(array6) {
+  let numbers6 = [];
+  for (let i = 0; i < array6.length; i++) {
+  if (typeof array6[i] === 'number'){
+    numbers6.push(array6[i]);
+  }
+  }
+  return numbers6;
+}
+console.log(numbersOnly(['Ayham', 3, 7, 'Alaa', 13, 'coding']));
+
+
+// 7
+
+function addUp(number){
+let sum=0;
+for (let i=number; i>=0;i--){
+  sum+=i;
+}
+return sum;
+}
+console.log(addUp(8));
+
+// 8
