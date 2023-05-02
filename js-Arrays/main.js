@@ -1,10 +1,8 @@
 // javascript Arrays
 // 1 in file 3-in1
 let array = ["Coding", "Academy", "By", "Orange"];
-let array1a = array.push("Jordan");
-console.log(array);
-let removed = array.splice(0, 2);
-console.log(removed);
+array.push("Jordan");
+console.log(array.slice(0, 2));
 let array2 = ["Welcome", "To"];
 let array3 = ["Coding", "Academy", "By", "Orange"];
 console.log(array2.concat(array3));
